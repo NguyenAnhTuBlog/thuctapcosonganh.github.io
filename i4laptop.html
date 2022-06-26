@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="product_js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="i4pr.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="product_js.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav style="text-align: center;" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a style="height: 25px; margin-top: -13px;" class="navbar-brand" href="#">
+                <img style="border-radius:100%;width:40px;height: 30px;object-fit: cover; " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM-1rHthk1IbzmkYzaWZqBCtdeHefz8DwfIA&usqp=CAU" style="width:64px;">
+            </a>
+            <a class="navbar-brand" href="#" style="font-size: 25px;
+        text-shadow: rgba(0,0,255,1) -1px -2px 0.5em;">Máy tính chính hãng</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ttcsn.html">Team</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sản Phẩm
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Laptop</a></li>
+                            <li><a class="dropdown-item" href="mouse.html">Phụ Kiện Laptop</a></li>
+                           
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"  color: white;">Search</button>
+                        <a href="dangnhap.html" style="border: 1px solid green; margin-left: 10px; width: 200px; height: 38px; line-height: 38px; color: green; text-decoration: none;"> Đăng Nhập</a>
+                        
+                </form>
+            </div>
+
+        </div>
+    </nav>
+    <!-- store -->
+    <div class="container mt-5 mb-5">
+        <div class="card">
+            <div class="row g-0">
+                <div class="col-md-6 border-end">
+                    <div class="d-flex flex-column justify-content-center">
+                        <div class="main_image">
+                            <img src="Image/AsusTUF.jpg" id="main_product_image" width="350">
+                        </div>
+                        <div class="thumbnail_images">
+                            <ul style="list-style:none;" id="thumbnail">
+                                <li><img onclick="changeImage(this)" src="Image/AsusTUF15.jpg" width="70">
+                                </li>
+                                <li><img onclick="changeImage(this)" src="Image/AsusVV15.jpg" width="70">
+                                </li>
+                                <li><img onclick="changeImage(this)" src="Image/AsusVVG15.jpg" width="70">
+                                </li>
+                                <li><img onclick="changeImage(this)" src="Image/AsusG51.jpg" width="70">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-3 right-side">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3 style="font-size: 23px;width:400px;margin-left: 10px; line-height:60px;">Laptop chính hãng</h3> <span class="heart">
+                            <i class="fa fa-shopping-cart"  style="margin-left: -5px;font-size:48px;color:red"></i>
+                        </span>
+                        </div>
+                        <div class="mt-2 pr-3 content">
+                            <ul>
+                                <li>Không áp dụng chung với khuyến mãi khác.</li>
+                                <li> Khuyến mãi chưa bao gồm phí giao/chuyển hàng.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>$430.99</h3>
+                        <div class="ratings d-flex flex-row align-items-center">
+                            <div class="d-flex flex-row">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                            </div> <span>441 reviews</span>
+                        </div>
+                        <div class="mt-5">
+                            <span class="fw-bold">Color</span>
+                            <div class="colors">
+                                <ul id="marker">
+                                    <li id="marker-1"></li>
+                                    <li id="marker-2"></li>
+                                    <li id="marker-3"></li>
+                                    <li id="marker-4"></li>
+                                    <li id="marker-5"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="buttons d-flex flex-row mt-5 gap-3">
+                            <button class="btn btn-outline-dark">Buy Now</button>
+                            <button class="btn btn-dark">Add to Basket</button>
+                        </div>
+                        <div class="search-option">
+                            <i class='bx bx-search-alt-2 first-search'></i>
+                            <div class="inputs">
+                                <input type="text" name="">
+                            </div>
+                            <i class='bx bx-share-alt share'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center mt-5"> <button class="btn btn-dark">OUR CATEGORIES</button>
+    </div>
+    <div class="d-flex justify-content-center mt-3"> <span class="text text-center">Finding Best Products Now<br> in Your Fingertips</span>
+    </div>
+    <div class="row mt-2 g-4">
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                    <div class="flex-column lh-1 imagename"> <span>Mobile</span> <span>Phones</span> </div>
+                    <div> <img src="Image/AsusTUF15.jpg" height="100" width="100" /> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                    <div class="flex-column lh-1 imagename"> <span>Head</span> <span>Phones</span> </div>
+                    <div> <img src="Image/DELL9.jpg" height="100" width="100" /> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                    <div class="flex-column lh-1 imagename"> <span>Smart</span> <span>Watches</span> </div>
+                    <div> <img src="Image/HP10.jpg" height="100" width="100" /> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                    <div class="flex-column lh-1 imagename"> <span>Air</span> <span>Purifiers</span> </div>
+                    <div> <img src="Image/DELL12.jpg" height="100" width="100" /> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                    <div class="flex-column lh-1 imagename"> <span>Vacuum</span> <span>Cleaners</span> </div>
+                    <div> <img src="Image/HP10.jpg" height="100" width="100" /> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                    <div class="flex-column lh-1 imagename"> <span>Washing</span> <span>Machines</span> </div>
+                    <div> <img src="Image/MSI3.jpg" height="100" width="100" /> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                    <div class="flex-column lh-1 imagename"> <span>Smart</span> <span>Televisions</span> </div>
+                    <div> <img src="Image/MSI10.jpg" height="100" width="100" /> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                    <div class="flex-column lh-1 imagename"> <span>Laptops</span> </div>
+                    <div> <img src="Image/MSI2.jpg" height="100" width="100" /> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer-newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4>Khuyến Mãi</h4>
+                        <p>Đăng ký nhận tin khuyến mãi hàng tuần từ LC LapTop</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <form action="" method="post"> <input type="email" name="email" placeholder="Địa chỉ email"><input type="submit" value="Subscribe"> </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Chăm sóc khách hàng</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a style="text-decoration: none;" href="#">Trung Tâm Trợ Giúp</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a style="text-decoration: none;" href="#">Hướng Dẫn Mua Hàng</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a style="text-decoration: none;" href="#">Thanh Toán</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a style="text-decoration: none;" href="#">Trả Hàng & Hoàn Tiền</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a style="text-decoration: none;" href="#">Chính Sách Bảo Hành</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>VỀ LC Laptop</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a style="text-decoration: none;" href="#">Giới Thiệu Về LC Laptop Việt Nam</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a style="text-decoration: none;" href="#">Tuyển Dụng</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a style="text-decoration: none;" href="#">Chính Hãng</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a style="text-decoration: none;" href="#">Kênh Người Bán</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a style="text-decoration: none;" href="#">Flash Sales</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h4>TRUNG TÂM BẢO HÀNH</h4>
+                        <p> Quận Bắc Từ Liêm <br> Hà Nội<br> Việt Nam <br><br> <strong>Phone:</strong> 0397981415<br> <strong>Email:</strong> info@example.com<br> </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-info">
+                        <h3>Trung Tâm Phân Phối</h3>
+                        <p>Giờ mở cửa: 09h00 - 17h00 (từ thứ 2 đến thứ 7).
+                            Liên hệ bảo hành sau 17h00 thì liên hệ trước qua điện thoại và không nhận bảo hành sản phẩm mà yêu cầu kiểm tra tại chỗ.
+                            Liên hệ mua hàng sau 17h00 thì đến cứ nhấn chuông.</p>
+                        <div class="social-links mt-3"> <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright"> &copy; Copyright <strong><span>LC</span></strong>. All Rights Reserved </div>
+            <!-- <div class="credits"> Designed by <a href="#">SalvadorDevVE</a> </div> -->
+        </div>
+    </footer>
+</body>
+
+</html>
